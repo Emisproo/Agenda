@@ -2,7 +2,8 @@ import React from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './App.css';
 import Home from './pages/home';
-import AddEdit from './pages/AddEdit';
+import EditContact from './pages/EditContact'
+import AddContact from './pages/AddContact';
 import View from './pages/View';
 
 import { ToastContainer} from 'react-toastify';
@@ -17,8 +18,8 @@ function App() {
         <ToastContainer position="top-center"/>
           <Routes>
           <Route path = "/" element = {<Home/>}/>
-          <Route path = "/add" element = {<AddEdit/>}/>
-          <Route path = "/update/:id" element = {<AddEdit/>}/>
+          <Route path = "/add" element = {<AddContact/>}/>
+          <Route path = "/edit/:id" element = {<EditContact/>}/>
           <Route path = "/view/:id" element = {<View/>}/>
         </Routes>
       </div>

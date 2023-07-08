@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './home.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { toast } from 'react-toastify';
-
+//import {AddEdit} from './AddEdit.js';
 
 const Home = () => {
   const [data, setData] = useState({});
